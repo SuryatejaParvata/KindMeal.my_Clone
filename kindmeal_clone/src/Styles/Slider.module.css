@@ -1,0 +1,11 @@
+.slider{
+    
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+.slider img{
+    height: 400px;
+   
+    justify-content: center;
+}

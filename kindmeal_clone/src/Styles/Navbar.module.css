@@ -1,6 +1,31 @@
-.navcontainter{
+.navcontainer{
     border: 2px solid blue;
-    height: 200px;
+    height: 80px;
     width: 100%;
-    color: brown;
+    
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+.navsocial{
+    display: flex;
+    gap: 10px;
+}
+.navsocial img{
+    height: 50px;
+    margin-top: 20px;
+}
+.navtabs{
+    background-color:#2bb673;
+    height: 30px;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: white;
+}
+.navtabs NavLink{
+    color: white;
 }
