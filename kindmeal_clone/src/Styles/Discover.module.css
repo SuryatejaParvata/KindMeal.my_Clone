@@ -1,0 +1,27 @@
+.container{
+    padding: 2%;
+     gap: 20px;
+     justify-content: center;
+     box-shadow: 0px 0px 6px #e0e0e0;
+   width: 80%;
+   margin: auto;
+ }
+ .links{
+     font-family: "Roboto", Arial, Helvetica, sans-serif;
+     display: flex;
+     justify-content: space-between;
+ }
+ .links div:nth-child(1){
+     margin-top: 4px;
+ 
+ }
+ .container img{
+     height: 200px;
+     width: 200px;
+     padding: 10px;
+ }
+
+ .images{
+    display: flex;
+    gap: 35px;
+ }

@@ -6,6 +6,7 @@ import Logout from "../Pages/Logout";
 import Login from "../Pages/Login";
 
 import { Route, Routes } from "react-router-dom";
+import Footer from "../Components/Footer";
 const Allroutes = () => {
   return (
     <div>
@@ -17,6 +18,7 @@ const Allroutes = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/logout" element={<Logout />} />
       </Routes>
+      <Footer/>
     </div>
   );
 };

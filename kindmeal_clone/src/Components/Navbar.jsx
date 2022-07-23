@@ -208,7 +208,7 @@ const Navbar = () => {
           
        </div> ) : (
           <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
-            <p style={{ fontSize: "20px" }} onClick={handleSignup}>
+            <p style={{ fontSize: "20px" }} onClick={handleLogin}>
              Login
             </p>
             <div  >

@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-// import style from "./PopUp.module.css";
+
+import styles from "../Styles/Login.module.css";
 import { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
@@ -12,17 +13,14 @@ const Login = () => {
   const [formData, setFormData] = useState({});
   const [visibility, setVisibility] = useState(false);
 
-  // const popupCloseHandler = (e) => {
-  //   setVisibility(e);
-  // };
   const getData = () => {
     data = JSON.parse(localStorage.getItem("RegisteredData")) || [];
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(formData);
+
     getData();
-    // console.log(data);
+
     if (data.length > 0) {
       if (
         data[0].email === formData.email &&
@@ -48,75 +46,65 @@ const Login = () => {
     let inputName = e.target.name;
     setFormData({ ...formData, [inputName]: e.target.value });
   };
-  // console.log(formData);
 
   return (
     <>
-      <button
+      {/* <button
         onClick={(e) => setVisibility(!visibility)}
-       
         style={{ backgroundColor: "white", color: "black" }}
       >
         Login
-      </button>
+      </button> */}
 
-      
-        <form>
-          <div >
-            <img
-              
-              src="https://www.kindmeal.my/images/logo-kindmeal.png"
-              alt="img"
+      <form>
+        <div>
+          <img
+            src="https://www.kindmeal.my/images/logo-kindmeal.png"
+            alt="img"
+          />
+          <h3>Member Login</h3>
+          <br />
+          <div>
+            <input
+              type="email"
+              placeholder="Your Email"
+              name="email"
+              onChange={handleChange}
             />
-            <h3>Member Login</h3>
-            <br />
-            <div >
-              <input
-                type="email"
-                placeholder="Your Email"
-                name="email"
-                onChange={handleChange}
-              />
-              <input
-                type="password"
-                placeholder="Your Password"
-                name="password"
-                onChange={handleChange}
-              />
+            <input
+              type="password"
+              placeholder="Your Password"
+              name="password"
+              onChange={handleChange}
+            />
 
-              <div>
-                <button  onClick={handleSubmit}>
-                  Login
+            <div>
+              <button onClick={handleSubmit}>Login</button>
+              <br />
+              <br />
+              <hr />
+              <br />
+              <a
+                href="https://www.kindmeal.my/login.php?action=facebook"
+                target="https://www.facebook.com/KindMeal.my"
+              >
+                <button className={styles.facebook}>
+                  <img
+                    src="https://www.kindmeal.my/images/icon_button_fb.png"
+                    alt="facebook"
+                  />
+                  Login With Facebook
                 </button>
-                <br />
-                <br />
-                <hr />
-                <br />
-                <a
-                  href="https://www.kindmeal.my/login.php?action=facebook"
-                  target="https://www.facebook.com/KindMeal.my"
-                >
-                  <button >
-                    <img
-                      src="https://www.kindmeal.my/images/icon_button_fb.png"
-                      alt="facebook"
-                      
-                    />
-                    Login With Facebook
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            <div >
-              <p>Forgot password?</p>
-              <p onClick={() => navigate("/join")}>
-                Not a member? Sign up FREE!
-              </p>
+              </a>
             </div>
           </div>
-        </form>
-     
+
+          <div>
+            <p>Forgot password?</p>
+            <p onClick={() => navigate("/join")}>Not a member? Sign up FREE!</p>
+          </div>
+        </div>
+      </form>
     </>
   );
 };
