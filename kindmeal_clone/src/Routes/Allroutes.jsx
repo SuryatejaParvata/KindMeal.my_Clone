@@ -10,6 +10,7 @@ import Footer from "../Components/Footer";
 import Help from "../Pages/Help";
 import Mealdeals from "../Pages/Mealdeals";
 import Coupon from "../Pages/Coupon";
+import Couponcode from "../Pages/Couponcode";
 const Allroutes = () => {
   return (
     <div>
@@ -23,6 +24,7 @@ const Allroutes = () => {
         <Route path="/help" element={<Help />} />
         <Route path="/deals" element={<Mealdeals />} />
         <Route path="/coupon" element={<Coupon/>} />
+        <Route path="/couponcode" element={<Couponcode/>} />
       </Routes>
       <Footer/>
     </div>

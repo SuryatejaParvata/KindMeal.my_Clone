@@ -36,8 +36,8 @@ const Login = () => {
         alert("Wrong Password, Try again");
       }
     } else {
-      alert("First Sign in");
-      navigate("/join");
+      alert("Signup");
+      navigate("/signup");
       setVisibility(false);
     }
   };

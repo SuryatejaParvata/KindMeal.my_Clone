@@ -1,6 +1,10 @@
+.body{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
 .backgroundimg{
     background-image: url("https://www.kindmeal.my/photos/shop/5/599-c.jpg");
-    border: 1px solid red;
+    
     height: 300px;
 }
 .headers{
@@ -9,4 +13,27 @@
 }
 .offerdiv{
     display: flex;
+    height: 400px;
+ 
+}
+.leftdiv{
+    width: 50%;
+   
+    background-image: url("https://www.kindmeal.my/photos/shop/5/599-c.jpg");
+    
+    color: white;
+}
+.rightdiv{
+    width: 50%;
+   
+}
+.rightdiv div{
+    
+    width: 100%;
+}
+.getcoupon{
+   background-color:  #2d96ff;
+   color: white;
+   border-radius: 5px;
+   border: transparent;
 }

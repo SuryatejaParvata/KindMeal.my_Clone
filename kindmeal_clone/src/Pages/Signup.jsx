@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../Context/AuthContext";
-// import "../Styles/Join.css";
+import styles from "../Styles/Signup.module.css";
 const Signup = () => {
   const navigate = useNavigate();
   const [FormData, setFormData] = useState({});
@@ -43,54 +43,14 @@ const Signup = () => {
   };
   return (
     <>
-      <div >
-        {/* left..................     */}
-        <div >
-          <div  onClick={() => navigate("/join")}>
-            <img src="https://www.kindmeal.my/images/join_normal.png" />
-            <br />
-            <p>Food Lover SignUP</p>
-          </div>
-          <br />
+      <div>
+        
+        
+        <div>
+          
           
           <br />
-          <div >
-            <h6>Why KindMeal?</h6>
-            <div>
-              <ul>
-                <li>Exclusive meat-free deals</li>
-                <li> Share yummy food moments</li>
-                <li> Meet friendly food lovers</li>
-                <li> Discover cool restaurants</li>
-                <li> Email updates on tasty deals</li>
-                <li> Instant coupons & dining</li>
-                <li> No upfront payment, booking or printing</li>
-              </ul>
-            </div>
-            <br />
-            <a href="https://www.kindmeal.my/about.htm">More about details </a>
-          </div>
-        </div>
-
-        {/* Right.......................................   */}
-        <div >
-          <div >
-            <h1>
-              Food Lover? Sign Up Now or{" "}
-              <a href="https://www.facebook.com/v2.9/dialog/oauth?client_id=292733157519852&redirect_uri=https%3A%2F%2Fwww.kindmeal.my%2Flogin.php%3Faction%3Dfacebook&state=9152522c0f1a08cd79f59884f7db96b8&display=popup&scope=email,user_birthday,user_location">
-                Login With Facebook
-              </a>
-            </h1>
-          </div>
-          <br />
-          <div >
-            <p>
-              Discover tasty meat-free meals and dine instantly — no coupon
-              payment, booking or printing is required.
-            </p>
-          </div>
-          <br />
-          <div >
+          <div>
             <p>
               KindMeal is a fun, exciting and cool new way for you to show your
               compassion towards animals. We collaborate with kind restaurants
@@ -103,25 +63,25 @@ const Signup = () => {
           <br />
           <form onSubmit={handleSubmit}>
             <div style={{ display: "flex", marginLeft: "110px" }}>
-              <label>First Name</label>
-              <label style={{ marginLeft: "200px" }}>Last Name</label>
+              <label></label>
+              <label style={{ marginLeft: "200px" }}></label>
             </div>
             <div>
               {" "}
               Your Name
               <input
-                
                 name="firstName"
                 onChange={handleChange}
                 type="first name"
                 required
+                placeholder="firstname"
               />
               <input
-               
                 type="last name"
                 name="lastName"
                 onChange={handleChange}
                 required
+                placeholder="lastname"
               />
             </div>
             <br />
@@ -134,7 +94,6 @@ const Signup = () => {
               {" "}
               Email
               <input
-                
                 name="email"
                 type="email"
                 onChange={handleChange}
@@ -145,7 +104,6 @@ const Signup = () => {
               {" "}
               Re-Enter Email{" "}
               <input
-               
                 name="email"
                 type="email"
                 onChange={handleChange}
@@ -156,7 +114,6 @@ const Signup = () => {
               {" "}
               Password{" "}
               <input
-               
                 name="password"
                 type="password"
                 onChange={handleChange}
@@ -178,7 +135,6 @@ const Signup = () => {
               </div>{" "}
               Username
               <input
-               
                 name="username"
                 type="username"
                 onChange={handleChange}
@@ -192,7 +148,6 @@ const Signup = () => {
             <div>
               Birth Date{" "}
               <input
-               
                 name="dob"
                 onChange={handleChange}
                 type="date"
@@ -203,12 +158,7 @@ const Signup = () => {
             <div>
               {" "}
               Country
-              <select
-                
-                name="country"
-                onChange={handleChange}
-                required
-              >
+              <select name="country" onChange={handleChange} required>
                 <option>Your Country</option>
                 <option>INDIA</option>
                 <option>CHINA</option>
@@ -233,7 +183,7 @@ const Signup = () => {
             <br />
             <div>
               State
-              <select  name="state" onChange={handleChange} required>
+              <select name="state" onChange={handleChange} required>
                 <option>Select State</option>
                 <option>PATNA</option>
                 <option>BANGALORE</option>
@@ -246,10 +196,9 @@ const Signup = () => {
               </select>
             </div>
             <br />
-            <div >
+            <div>
               Gender
               <input
-                
                 name="gender"
                 onChange={handleChange}
                 value="male"
@@ -258,7 +207,6 @@ const Signup = () => {
               />
               Male
               <input
-                
                 name="gender"
                 onChange={handleChange}
                 value="female"
@@ -268,11 +216,10 @@ const Signup = () => {
               Female
             </div>
             <br />
-            <div >
+            <div>
               Profile Photo{" "}
               <input
                 required
-                
                 name="photo"
                 type="link"
                 placeholder="Select Photo"
@@ -280,7 +227,7 @@ const Signup = () => {
               />
             </div>
             <br />
-            <div >
+            <div>
               <input
                 required
                 type="checkbox"
@@ -293,9 +240,7 @@ const Signup = () => {
             <br />
             <br />
             <div>
-              <button  type="submit">
-                Join Now
-              </button>
+              <button type="submit">Join Now</button>
             </div>
           </form>
         </div>
@@ -321,5 +266,5 @@ const Signup = () => {
     </>
   );
 };
- 
+
 export default Signup;
