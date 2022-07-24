@@ -1,0 +1,22 @@
+body{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+.container{
+display: flex;
+justify-content: space-evenly;
+margin: auto;
+width: 80%;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    
+}
+.left div{
+    box-shadow: 0px 0px 6px #e0e0e0;
+}
+.right{
+    padding: 5%;
+    box-shadow: 0px 0px 6px #e0e0e0;
+}

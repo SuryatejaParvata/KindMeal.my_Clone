@@ -236,7 +236,7 @@ const Navbar = () => {
           <div> 
 
           <NavLink
-            className="NavLink" 
+            
             to="/"
             style={{ textDecoration: "none" }}
             >
@@ -246,7 +246,7 @@ const Navbar = () => {
             </div>
             <div> 
           <NavLink
-            className="NavLink"
+            
             to="/deals"
             style={{ textDecoration: "none" }}
           >
@@ -255,7 +255,7 @@ const Navbar = () => {
           </div>
             <div> 
           <NavLink
-            className="NavLink"
+            
             to="/kindmoments"
             style={{ textDecoration: "none" }}
           >
@@ -264,7 +264,7 @@ const Navbar = () => {
           </div>
             <div> 
           <NavLink
-            className="NavLink"
+            
             to="/hotpicks"
             style={{ textDecoration: "none" }}
           >
@@ -273,7 +273,7 @@ const Navbar = () => {
           </div>
             <div> 
           <NavLink
-            className="NavLink"
+            
             to="/recipes"
             style={{ textDecoration: "none" }}
           >
@@ -282,7 +282,7 @@ const Navbar = () => {
           </div>
             <div> 
           <NavLink
-            className="NavLink"
+            
             to="/directory"
             style={{ textDecoration: "none" }}
           >
@@ -291,7 +291,7 @@ const Navbar = () => {
           </div>
             <div> 
           <NavLink
-            className="NavLink"
+            
             to="/articles"
             style={{ textDecoration: "none" }}
           >
@@ -300,7 +300,7 @@ const Navbar = () => {
           </div>
             <div> 
           <NavLink
-            className="NavLink"
+            
             to="/help"
             style={{ textDecoration: "none" }}
           >

@@ -1,0 +1,12 @@
+.backgroundimg{
+    background-image: url("https://www.kindmeal.my/photos/shop/5/599-c.jpg");
+    border: 1px solid red;
+    height: 300px;
+}
+.headers{
+    display: flex;
+    justify-content: space-between;
+}
+.offerdiv{
+    display: flex;
+}
